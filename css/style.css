@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+    padding-right: 70px;
+    margin-bottom: 30px;
+}
+
+.menu_button {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 20px;
+    height: 17px;
+    border: none;
+    margin-right: 28px;
+    cursor: pointer;
+}
+
+.menu_line {
+    display: block;
+    background: #1F2022;
+    width: 20px;
+    height: 3px;
+}
+
+.logo {
+    margin-right: 59px;
+}
+
+.input_group {
+    background: #ebebeb;
+    border-radius: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    align-items: center;
+    padding-right: 17px;
+    max-width: 830px;
+    width: 50%;
+}
+
+.input_search {
+    background-color: transparent;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 23px;
+    padding-right: 23px;
+    width: 100%;
+}
+
+.button_search {
+    padding: 0;
+    width: 19px;
+    height: 19px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.icon_search {
+    fill: #000;
+}
+
+.icons_link {
+    text-decoration: none;
+    opacity: .24;
+}
+
+.icons_link:hover {
+    opacity: 0.7;
+}
+
+.icons_link {
+    margin-right: 50px;
+}
+
+.user_avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.sidebar {
+    padding-left: 32px;
+}
+
+.nav_menu {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    padding-left: 0px;
+    list-style: none;
+}
+
+.nav_item {
+    margin-bottom: 28px;
+    cursor: pointer;
+}
+
+.nav_link {
+    display: flex;
+    align-items: center;
+    color: #898989;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    color: #FF0000;
+}
+
+.nav_link:hover .icon {
+    fill: #FF0000;
+}
+
+.nav_item .icon {
+    fill: #898989;
+}
+
+.nav_text {
+    margin-left: 13px;
+}
+
+.nav_image {
+    width: 26px;
+    height: 30px;
+    border-radius: 50%;
+}
