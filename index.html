@@ -1,204 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>YouTube</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <button class="menu_button">
+      <button class="menu_button">
         <span class="menu_line"></span>
         <span class="menu_line"></span>
         <span class="menu_line"></span>
       </button>
-        <img src="img/logo.svg" alt="YouTube" class="logo" />
-        <div class="input_group">
-            <input type="search" name="earch" placeholder="Search" class="input_search" />
-            <button type="submit" class="button_search">
+      <img src="img/logo.svg" alt="YouTube" class="logo" />
+      <div class="input_group">
+        <input
+          type="search"
+          name="earch"
+          placeholder="Search"
+          class="input_search"
+        />
+        <button type="submit" class="button_search">
           <svg class="icon icon_search" width="19" height="19">
             <use xlink:href="img/icons.svg#search"></use>
           </svg>
         </button>
-        </div>
-        <div class="icons">
-            <a href="#" class="icons_link">
-                <svg class="icon icon_video" width="27" height="20">
+      </div>
+      <div class="icons">
+        <a href="#" class="icons_link">
+          <svg class="icon icon_video" width="27" height="20">
             <use xlink:href="img/icons.svg#video"></use>
           </svg>
-            </a>
-            <a href="#" class="icons_link">
-                <svg class="icon icon_apps" width="21" height="21">
+        </a>
+        <a href="#" class="icons_link">
+          <svg class="icon icon_apps" width="21" height="21">
             <use xlink:href="img/icons.svg#apps"></use>
           </svg>
-            </a>
-            <a href="#" class="icons_link">
-                <svg class="icon icon_notif" width="22" height="26">
+        </a>
+        <a href="#" class="icons_link">
+          <svg class="icon icon_notif" width="22" height="26">
             <use xlink:href="img/icons.svg#notif"></use>
           </svg>
-            </a>
-        </div>
-        <div class="user">
-            <a href="#" class="user">
-                <img src="img/i.jpg" alt="Farida Mashanlo" class="user_avatar" />
-            </a>
-        </div>
+        </a>
+      </div>
+      <div class="user">
+        <a href="#" class="user">
+          <img src="img/i.jpg" alt="Farida Mashanlo" class="user_avatar" />
+        </a>
+      </div>
     </header>
+    <div class="mobile_sidebar">
+      <ul class="nav_menu">
+        <li class="nav_item">
+          <a href="#" class="nav_link">
+            <svg class="icon icon_home" width="20" height="19">
+              <use xlink:href="img/icons.svg#home"></use>
+            </svg>
+            <span class="nav_text">Home</span>
+          </a>
+        </li>
+        <li class="nav_item">
+          <a href="#" class="nav_link">
+            <svg class="icon icon_trending" width="20" height="19">
+              <use xlink:href="img/icons.svg#trending"></use>
+            </svg>
+            <span class="nav_text">Trending</span>
+          </a>
+        </li>
+        <li class="nav_item">
+          <a href="#" class="nav_link">
+            <svg class="icon icon_subscriptions" width="20" height="19">
+              <use xlink:href="img/icons.svg#subscriptions"></use>
+            </svg>
+            <span class="nav_text">Subscriptions</span>
+          </a>
+        </li>
+        <li class="nav_item">
+          <a href="#" class="nav_link">
+            <svg class="icon icon_library" width="20" height="19">
+              <use xlink:href="img/icons.svg#library"></use>
+            </svg>
+            <span class="nav_text">Library</span>
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="container">
-        <aside class="sidebar">
-            <nav class="nav">
-                <ul class="nav_menu">
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <svg class="icon icon_home" width="20" height="19">
+      <aside class="sidebar">
+        <nav class="nav">
+          <ul class="nav_menu">
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon_home" width="20" height="19">
                   <use xlink:href="img/icons.svg#home"></use>
                 </svg>
-                            <span class="nav_text">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <svg class="icon icon_trending" width="20" height="19">
+                <span class="nav_text">Home</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon_trending" width="20" height="19">
                   <use xlink:href="img/icons.svg#trending"></use>
                 </svg>
-                            <span class="nav_text">Trending</span>
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <svg class="icon icon_subscriptions" width="20" height="19">
+                <span class="nav_text">Trending</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon_subscriptions" width="20" height="19">
                   <use xlink:href="img/icons.svg#subscriptions"></use>
                 </svg>
-                            <span class="nav_text">Subscriptions</span>
-                        </a>
-                    </li>
-                </ul>
-                <!--Второе меню боковое-->
-                <ul class="nav_menu">
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <svg class="icon icon_library" width="20" height="19">
+                <span class="nav_text">Subscriptions</span>
+              </a>
+            </li>
+          </ul>
+          <!--Второе меню боковое-->
+          <ul class="nav_menu">
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon_library" width="20" height="19">
                   <use xlink:href="img/icons.svg#library"></use>
                 </svg>
-                            <span class="nav_text">Library</span>
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <svg class="icon icon_history" width="20" height="19">
+                <span class="nav_text">Library</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon_history" width="20" height="19">
                   <use xlink:href="img/icons.svg#history"></use>
                 </svg>
-                            <span class="nav_text">History</span>
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <svg class="icon icon_watch" width="20" height="19">
+                <span class="nav_text">History</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon_watch" width="20" height="19">
                   <use xlink:href="img/icons.svg#watch"></use>
                 </svg>
-                            <span class="nav_text">Watch</span>
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <svg class="icon icon_star" width="20" height="19">
+                <span class="nav_text">Watch</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon_star" width="20" height="19">
                   <use xlink:href="img/icons.svg#star"></use>
                 </svg>
-                            <span class="nav_text">Favorites</span>
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <svg class="icon icon_like" width="20" height="19">
+                <span class="nav_text">Favorites</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon_like" width="20" height="19">
                   <use xlink:href="img/icons.svg#like"></use>
                 </svg>
-                            <span class="nav_text">Liked videos</span>
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <svg class="icon icon_music" width="20" height="19">
+                <span class="nav_text">Liked videos</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon_music" width="20" height="19">
                   <use xlink:href="img/icons.svg#music"></use>
                 </svg>
-                            <span class="nav_text">Music</span>
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <svg class="icon icon_game" width="20" height="19">
+                <span class="nav_text">Music</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon_game" width="20" height="19">
                   <use xlink:href="img/icons.svg#game"></use>
                 </svg>
-                            <span class="nav_text">Game</span>
-                        </a>
-                    </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                            <svg class="icon icon_down" width="20" height="19">
-                                <use xlink:href="img/icons.svg#down"></use>
-                            </svg>
-                            <span class="nav_text">Show more</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <h2 class="nav_title">Subscriptions</h2>
-            <ul class="nav_menu">
-                <li class="nav_item">
-                    <a href="#" class="nav_link">
-                        <img src="img/1.jpg" alt="Avatar" class="nav_image" />
-                        <span class="nav_text">Nazim sun</span>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#" class="nav_link">
-                        <img src="img/2.jpg" alt="Avatar" class="nav_image" />
-                        <span class="nav_text">Ailin Mashanlo</span>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#" class="nav_link">
-                        <img src="img/3.jpg" alt="Avatar" class="nav_image" />
-                        <span class="nav_text">Leila Seripova</span>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#" class="nav_link">
-                        <img src="img/4.jpg" alt="Avatar" class="nav_image" />
-                        <span class="nav_text">Farida Mashanlo</span>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#" class="nav_link">
-                        <img src="img/5.jpg" alt="Avatar" class="nav_image" />
-                        <span class="nav_text">Nazim sun</span>
-                    </a>
-                </li>
-                <li class="nav_item">
-                    <a href="#" class="nav_link">
-                        <img src="img/6.jpg" alt="Avatar" class="nav_image" />
-                        <span class="nav_text">Akilbek uulu Beknazar</span>
-                    </a>
-                </li>
-            </ul>
-            <ul class="nav_menu">
-                <li class="nav_item">
-                    <a href="#" class="nav_link">
-                        <svg class="icon icon_settings" width="20" height="19">
+                <span class="nav_text">Game</span>
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#" class="nav_link">
+                <svg class="icon icon_down" width="20" height="19">
+                  <use xlink:href="img/icons.svg#down"></use>
+                </svg>
+                <span class="nav_text">Show more</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <h2 class="nav_title">Subscriptions</h2>
+        <ul class="nav_menu">
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <img src="img/1.jpg" alt="Avatar" class="nav_image" />
+              <span class="nav_text">Nazim sun</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <img src="img/2.jpg" alt="Avatar" class="nav_image" />
+              <span class="nav_text">Ailin Mashanlo</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <img src="img/3.jpg" alt="Avatar" class="nav_image" />
+              <span class="nav_text">Leila Seripova</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <img src="img/4.jpg" alt="Avatar" class="nav_image" />
+              <span class="nav_text">Farida Mashanlo</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <img src="img/5.jpg" alt="Avatar" class="nav_image" />
+              <span class="nav_text">Nazim sun</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <img src="img/6.jpg" alt="Avatar" class="nav_image" />
+              <span class="nav_text">Akilbek uulu Beknazar</span>
+            </a>
+          </li>
+        </ul>
+        <ul class="nav_menu">
+          <li class="nav_item">
+            <a href="#" class="nav_link">
+              <svg class="icon icon_settings" width="20" height="19">
                 <use xlink:href="img/icons.svg#settings"></use>
               </svg>
-                        <span class="nav_text">Settings</span>
-                    </a>
-                </li>
-            </ul>
-        </aside>
-    </div>
-</body>
+              <span class="nav_text">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main class="content">
+        <div class="channel">
+          <a href="" class="channel_title">
+            <img src="img/i.jpg" alt="#" class="channel_avatar" />
+            <span class="channel_text">Farida Mashanlo</span>
+          </a>
 
+          <div class="slider_buttons">
+            <div class="channel-button-prev">
+              <svg class="icon icon_left" width="28" height="28">
+                <use xlink:href="img/icons.svg#left"></use>
+              </svg>
+            </div>
+            <div class="channel-button-next">
+              <svg class="icon icon_right" width="28" height="28">
+                <use xlink:href="img/icons.svg#right"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- Slider main container -->
+          <div class="swiper-container channel_slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/7.jpg" alt="Nazim" class="thumbnail" />
+                    <span class="video_duration">4:15</span>
+                  </div>
+                  <h3 class="video_title">Zagolovok video</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">80k views</span>
+                      <span class="video_date">3 days ago</span>
+                    </span>
+                    <span class="video_channel">Nazim channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/8.jpg" alt="Nazim" class="thumbnail" />
+                    <span class="video_duration">8:00</span>
+                  </div>
+                  <h3 class="video_title">Kakoe-to video</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">18k views</span>
+                      <span class="video_date">1 day ago</span>
+                    </span>
+                    <span class="video_channel">Nazim channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/9.jpg" alt="Nazim" class="thumbnail" />
+                    <span class="video_duration">7:18</span>
+                  </div>
+                  <h3 class="video_title">School-licei</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">12k views</span>
+                      <span class="video_date">5 days ago</span>
+                    </span>
+                    <span class="video_channel">Nazim channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/10.jpg" alt="Nazim" class="thumbnail" />
+                    <span class="video_duration">3:18</span>
+                  </div>
+                  <h3 class="video_title">Issik-kul</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">15k views</span>
+                      <span class="video_date">5 days ago</span>
+                    </span>
+                    <span class="video_channel">Nazim channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/11.jpg" alt="Nazim" class="thumbnail" />
+                    <span class="video_duration">6:17</span>
+                  </div>
+                  <h3 class="video_title">Novoe video</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">8k views</span>
+                      <span class="video_date">7 days ago</span>
+                    </span>
+                    <span class="video_channel">Nazim channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/12.jpg" alt="Nazim" class="thumbnail" />
+                    <span class="video_duration">8:19</span>
+                  </div>
+                  <h3 class="video_title">Eshe odno video</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">12k views</span>
+                      <span class="video_date">9 days ago</span>
+                    </span>
+                    <span class="video_channel">Nazim channel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Channel -->
+        <div class="channel">
+          <a href="" class="channel_title">
+            <!-- <img src="img/i.jpg" alt="#" class="channel_avatar" /> -->
+            <span class="channel_text1">Reccomended</span>
+          </a>
+
+          <div class="slider_buttons">
+            <div class="first-channel-button-prev">
+              <svg class="icon icon_left" width="28" height="28">
+                <use xlink:href="img/icons.svg#left"></use>
+              </svg>
+            </div>
+            <div class="first-channel-button-next" id="first">
+              <svg class="icon icon_right" width="28" height="28">
+                <use xlink:href="img/icons.svg#right"></use>
+              </svg>
+            </div>
+          </div>
+          <!-- Slider main container -->
+          <div class="swiper-container first_channel_slider recommended_slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/13.jpg" alt="Nazim" class="thumbnail" />
+                    <span class="video_duration">8:15</span>
+                  </div>
+                  <h3 class="video_title">Vtoraya stroka</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">50k views</span>
+                      <span class="video_date">2 days ago</span>
+                    </span>
+                    <span class="video_channel">Ailin channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/14.jpg " alt="Nazim " class="thumbnail" />
+                    <span class="video_duration">8:20</span>
+                  </div>
+                  <h3 class="video_title">Opyat video</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">16k views</span>
+                      <span class="video_date">5 day ago</span>
+                    </span>
+                    <span class="video_channel">Ailin channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/15.jpg " alt="Nazim " class="thumbnail" />
+                    <span class="video_duration">5:13</span>
+                  </div>
+                  <h3 class="video_title">Cnova video</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">13k views</span>
+                      <span class="video_date">6 days ago</span>
+                    </span>
+                    <span class="video_channel">Ailin channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/16.jpg " alt="Nazim " class="thumbnail" />
+                    <span class="video_duration">7:18</span>
+                  </div>
+                  <h3 class="video_title">Privet video</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">14k views</span>
+                      <span class="video_date">8 days ago</span>
+                    </span>
+                    <span class="video_channel">Ailin channel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Channel -->
+        <div class="channel">
+          <a href=" " class="channel_title">
+            <img src="img/i.jpg " alt="# " class="channel_avatar" />
+            <span class="channel_text">Farida Mashanlo</span>
+          </a>
+
+          <div class="slider_buttons">
+            <div class="second-channel-button-prev">
+              <svg class="icon icon_left" width="28 " height="28 ">
+                <use xlink:href="img/icons.svg#left "></use>
+              </svg>
+            </div>
+            <div class="second-channel-button-next">
+              <svg class="icon icon_right" width="28 " height="28 ">
+                <use xlink:href="img/icons.svg#right "></use>
+              </svg>
+            </div>
+          </div>
+          <!-- Slider main container -->
+          <div class="swiper-container second_channel_slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/17.jpg " alt="Nazim " class="thumbnail" />
+                    <span class="video_duration">4:15</span>
+                  </div>
+                  <h3 class="video_title">Zagolovok video</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">80k views</span>
+                      <span class="video_date">3 days ago</span>
+                    </span>
+                    <span class="video_channel">Nazim channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/18.jpg " alt="Nazim " class="thumbnail" />
+                    <span class="video_duration">8:00</span>
+                  </div>
+                  <h3 class="video_title">Kakoe-to video</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">18k views</span>
+                      <span class="video_date">1 day ago</span>
+                    </span>
+                    <span class="video_channel">Nazim channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/19.jpg " alt="Nazim " class="thumbnail" />
+                    <span class="video_duration">7:18</span>
+                  </div>
+                  <h3 class="video_title">School-licei</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">12k views</span>
+                      <span class="video_date">5 days ago</span>
+                    </span>
+                    <span class="video_channel">Nazim channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/20.jpg " alt="Nazim " class="thumbnail" />
+                    <span class="video_duration">3:18</span>
+                  </div>
+                  <h3 class="video_title">Issik-kul</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">15k views</span>
+                      <span class="video_date">5 days ago</span>
+                    </span>
+                    <span class="video_channel">Nazim channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/21.jpg " alt="Nazim " class="thumbnail" />
+                    <span class="video_duration">6:17</span>
+                  </div>
+                  <h3 class="video_title">Novoe video</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">8k views</span>
+                      <span class="video_date">7 days ago</span>
+                    </span>
+                    <span class="video_channel">Nazim channel</span>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="video_card">
+                  <div class="video_thumb">
+                    <img src="img/22.jpg " alt="Nazim " class="thumbnail" />
+                    <span class="video_duration">8:19</span>
+                  </div>
+                  <h3 class="video_title">Eshe odno video</h3>
+                  <div class="video_info">
+                    <span class="video_counter">
+                      <span class="video_views">12k views</span>
+                      <span class="video_date">9 days ago</span>
+                    </span>
+                    <span class="video_channel">Nazim channel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Channel -->
+      </main>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js "></script>
+    <script src="js/main.js "></script>
+  </body>
 </html>
